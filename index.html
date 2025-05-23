@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shailshree Shah - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="logo">SS</div>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#journey">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="theme-toggle" id="themeToggle">🌙</div>
+    
+  </header>
+
+  <!-- Hero Section -->
+    <section id="home" class="hero">
+    <div class="hero-content">
+        <div class="portrait">
+        <img src="image.png" alt="Shailshree Shah" />
+        </div>
+        <div class="intro-text">
+        <p class="fade-in delay-1">Hi, my name is</p>
+        <h1 class="fade-in delay-2">Shailshree Shah</h1>
+        <h2 class="typing fade-in delay-3">
+            <span id="typed-text"></span><span class="cursor">|</span>
+        </h2>
+        <p class="description fade-in delay-4">
+            I’m an AI/ML engineer passionate about creating meaningful solutions with data and algorithms.
+        </p>
+        <a href="#contact" class="btn fade-in delay-5">Say Hello</a>
+        </div>
+    </div>
+    <div class="gradient-bg"></div>
+    </section>
+
+  
+  <!-- About Me Section -->
+<section id="about" class="about-section">
+  <div class="about-wrapper">
+    <div class="about-left">
+      <div class="about-portrait-container">
+        <img src="image.png" alt="Shailshree Shah" />
+      </div>
+    </div>
+    <div class="about-right">
+      <h2>About me</h2>
+      <p>
+        When it comes to data, I’m like a modern day Enola Holmes, always on the hunt for the story behind the numbers.
+      </p>
+      <p>
+        When I’m not cracking codes in the world of data science, you can find me making a difference in the lives of young girls. From mentoring to volunteering, I believe that education is the key to unlocking a brighter future, and I’m dedicated to doing my part to make that future a reality.
+      </p>
+      <ul>
+        <li>👩‍💻 Currently working as a Data Scientist and Research Associate</li>
+        <li>🌟 Founder of a digital inclusion project</li>
+        <li>💭 Let’s brainstorm over AI, algorithms, and impact</li>
+        <li>⚡ Fun fact: I’m a bookworm and bookmark hoarder</li>
+      </ul>
+      <a href="ShailshreeShah_CV.pdf" class="cv-button" download>📄 Download CV</a>
+    </div>
+  </div>
+</section>
+
+
+<!--Education Section -->
+
+<section id="education" class="education-section">
+  <h2 class="section-title">Education</h2>
+  <p class="section-subtitle">
+    My academic background and the knowledge I've gained through formal education.
+  </p>
+
+  <div class="education-cards">
+    <!-- School -->
+    <div class="edu-card">
+      <div class="edu-icon">🎓</div>
+      <h3>School</h3>
+      <h4><a href="#" target="_blank">United Educational Academy</a></h4>
+      <p><span>📅</span> 2020</p>
+      <p>Completed my primary and secondary education with a focus on science and mathematics. I was actively involved in extracurricular activities and sports.</p>
+      <p class="edu-meta">GPA: <strong>3.9</strong></p>
+    </div>
+
+    <!-- High School -->
+    <div class="edu-card">
+      <div class="edu-icon">🎓</div>
+      <h3>+2 in Science</h3>
+      <h4><a href="#" target="_blank">United Academy</a></h4>
+      <p><span>📅</span> 2020 – 2022</p>
+      <p>Completed my higher secondary education with a focus on science and mathematics. I was actively involved in extracurricular activities and sports.</p>
+      <p class="edu-meta">GPA: <strong>3.6</strong></p>
+    </div>
+
+    <!-- College -->
+    <div class="edu-card">
+      <div class="edu-icon">🎓</div>
+      <h3>Bachelor's (Hons.) in Computing with Artificial Intelligence</h3>
+      <h4><a href="#" target="_blank">Islington College, London Metropolitan University</a></h4>
+      <p><span>📅</span> 2022 – 2025</p>
+      <p>Focusing on artifical Intelligence, algorithms, and web technologies. I have developed a strong foundation in computer science and software engineering.</p>
+      <p class="edu-meta"><em>Running...</em></p>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Experience Section -->
+  <section id="journey" class="journey-section">
+    <h2 class="section-title">Professional Journey</h2>
+    <p class="section-subtitle">Roles that have shaped my expertise</p>
+
+    <div class="journey-container">
+      <!-- Left Timeline -->
+      <div class="timeline">
+        <div class="timeline-item active" onclick="showRole(0)">Innovate Tech<br><span>2023 – 2024</span></div>
+        <div class="timeline-item" onclick="showRole(1)">Danson Solution<br><span>2023</span></div>
+        <div class="timeline-item" onclick="showRole(2)">ING Skill Academy<br><span>2022 – 2023</span></div>
+      </div>
+
+      <!-- Right Detail -->
+      <div class="role-details" id="roleDetails">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="section-header">
+      <h2>My <span class="highlight">Projects</span></h2>
+    </div>
+    <div class="projects-filter">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="ml">Machine Learning</button>
+      <button class="filter-btn" data-filter="nlp">NLP</button>
+      <button class="filter-btn" data-filter="cv">Computer Vision</button>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card" data-category="ml cv">
+        <div class="project-image">
+          <img src="project1.jpg" alt="Project 1" />
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="#" target="_blank"><i class="fas fa-link"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>AI-Powered Image Recognition</h3>
+          <p>A deep learning system for real-time object detection using custom CNN architectures.</p>
+          <div class="project-tags">
+            <span>PyTorch</span>
+            <span>Computer Vision</span>
+            <span>CNN</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card" data-category="nlp">
+        <div class="project-image">
+          <img src="project2.jpg" alt="Project 2" />
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="#" target="_blank"><i class="fas fa-link"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Sentiment Analysis Engine</h3>
+          <p>NLP-based system for analyzing social media sentiments with 93% accuracy.</p>
+          <div class="project-tags">
+            <span>BERT</span>
+            <span>NLP</span>
+            <span>TensorFlow</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card" data-category="ml">
+        <div class="project-image">
+          <img src="project3.jpg" alt="Project 3" />
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="#" target="_blank"><i class="fas fa-link"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Predictive Analytics Tool</h3>
+          <p>Machine learning system that forecasts market trends with time-series analysis.</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Time-Series</span>
+            <span>ML</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="projects-cta">
+      <a href="https://github.com/Shailshree21" target="_blank" class="btn">See More on GitHub</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+ <section id="contact" class="contact-section">
+  <h2 class="section-title"><span class="fade-word">Let’s</span> <span class="gold-word">Connect</span></h2>
+  <p class="section-subtitle">Have an idea, opportunity, or just want to say hello? I’d love to hear from you.</p>
+
+  <div class="contact-container">
+    <!-- Left: Contact Info -->
+    <div class="contact-info">
+      <h3>Contact Details</h3>
+      <p><span class="icon">📬</span> <a href="mailto:shailshreeshah021@gmail.com">shailshreeshah021@gmail.com</a></p>
+      <p><span class="icon">📍</span> Based in Kathmandu, Nepal</p>
+
+      <h4>Let’s Build Together</h4>
+      <p>I’m always open to exciting collaborations, AI projects, and meaningful conversations around data, design, and innovation.</p>
+
+      <div class="social-links">
+        <a href="https://github.com/Shailshree21" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/shailshree" target="_blank">LinkedIn</a>
+        <a href="https://Instagram.com/chillshree" target="_blank">Instagram</a>
+      </div>
+    </div>
+
+    <!-- Right: Contact Form -->
+    <form class="contact-form" action="mailto:shailshreeshah021@gmail.com" method="POST" enctype="text/plain">
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+      <textarea name="message" rows="5" placeholder="Write your message here..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer Section -->
+
+  <footer class="footer-section">
+  <div class="footer-top">
+    <div class="footer-left">
+      <h3>Shailshree Shah</h3>
+      <p>AI/ML Engineer & Creative Technologist</p>
+    </div>
+    <div class="footer-socials">
+      <a href="https://github.com/shailshree" target="_blank" title="GitHub">🐱</a>
+      <a href="https://linkedin.com/in/shailshree" target="_blank" title="LinkedIn">💼</a>
+      <a href="mailto:shailshree@example.com" title="Email">📧</a>
+    </div>
+  </div>
+
+  <hr class="footer-line" />
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="footer-year"></span> Shailshree Shah. All rights reserved.</p>
+    <nav class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#journey">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <button onclick="scrollToTop()" class="scroll-top-btn" title="Back to Top">↑</button>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
